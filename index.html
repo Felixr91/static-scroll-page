@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,12 +22,11 @@
 </head>
 
 <body>
-  <div class="row d-flex justify-content-center align-items-center head" style="height:10vh;">
+  <div class="row d-flex justify-content-center align-items-center head">
     <h4 class="title">Archi Tech</h4>
   </div>
-  <div class="row container-fluid column-row"
-    style="height: 90vh; padding-top: 2vh; padding-bottom: 2vh;  background-color: aquamarine;">
-    <div class="col-6 d-flex align-items-center" style="height: 100%;">
+  <div class="row container-fluid column-row">
+    <div class="col-12 col-sm-12 col-md-6 d-flex align-items-center" style="height: 100%;">
       <div class="pl-5 our-work" style="width: 90%;">
         <h1>Our Work</h1>
         <p>
@@ -43,11 +45,11 @@
         </p>
       </div>
     </div>
-    <div class="col-6 hidden-scroll" style="height: 100%; overflow-y: scroll; border-left:black 2px solid;">
-      <img class="card-img-top" src="/assets/modernone.jpg" alt="modernone">
-      <img class="card-img-top" src="/assets/moderntwo.jpg" alt="modernone">
-      <img class="card-img-top" src="/assets/modernthree.jpg" alt="modernone">
-      <div>
+    <div class="col-12 col-sm-12 col-md-6 hidden-scroll">
+      <img class="card-img-top imgone" src="/assets/modernone.jpg" alt="modernone">
+      <img class="card-img-top imgtwo" src="/assets/moderntwo.jpg" alt="modernone">
+      <img class="card-img-top imgthree" src="/assets/modernthree.jpg" alt="modernone">
+      <div class="abs">
         <span class="absolutely">scroll</span>
       </div>
     </div>
@@ -64,6 +66,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.imgone', {
+      duration: 4000,
+      // origin: 'bottom',
+      // distance: '300px'
+    });
+
+  </script>
+
 </body>
 
 </html>
