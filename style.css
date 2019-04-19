@@ -1,0 +1,50 @@
+.hidden-scroll::-webkit-scrollbar { width: 0 !important }
+
+.card-img-top{
+  border-radius: 0px !important;
+  width: 90%;
+  margin-top: 5rem;
+  margin-bottom:5rem;
+}
+
+.column-row{
+  margin: 0;
+  padding: 0;
+}
+
+.description{
+  width: 90%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hidden-scroll{
+  height: 100%; 
+  overflow-y: scroll;
+  display: inline-block;
+  text-align: center;
+}
+
+.absolutely{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.title{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.our-work{
+  font-family: 'Roboto', sans-serif;
+}
+
+.head{
+  outline: black 3px solid;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
